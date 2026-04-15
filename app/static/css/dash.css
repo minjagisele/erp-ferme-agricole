@@ -1,0 +1,73 @@
+/* --- Variables & Base --- */
+:root {
+    --primary-blue: #0d6efd;
+    --success-green: #198754;
+    --info-cyan: #0dcaf0;
+    --warning-orange: #ffc107;
+    --danger-red: #dc3545;
+}
+
+/* --- KPIs --- */
+.kpi-card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+.kpi-card:hover { transform: translateY(-5px); }
+
+.kpi-icon {
+    font-size: 2.5rem;
+    opacity: 0.3;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+/* --- Listes & Timeline --- */
+.alert-item {
+    border-left: 4px solid;
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.activity-timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #dee2e6;
+}
+
+.activity-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.activity-icon {
+    position: absolute;
+    left: -46px; /* Ajusté pour centrer sur la ligne */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Containers --- */
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}

@@ -1,0 +1,104 @@
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    --main-bg: #f4f7f6;
+    --accent-color: #2ecc71; 
+    --text-main: #2c3e50;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- Cartes Style "Glassmorphism" léger --- */
+.card {
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* --- KPIs --- */
+.kpi-card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+.kpi-card:hover { transform: translateY(-5px); }
+
+
+.kpi-card .kpi-icon {
+    opacity: 0.1;
+    font-size: 3.5rem;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    transform: rotate(-15deg);
+}
+
+.stat-value {
+    font-size: 1.75rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #2c3e50, #4ca1af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- Timeline plus fine --- */
+/* .activity-timeline {
+    border-left: 2px dashed #e0e6ed;
+    padding-left: 25px;
+    margin-left: 10px;
+}
+
+.activity-item {
+    position: relative;
+    padding-bottom: 1.5rem;
+} */
+
+.alert-item {
+    border-left: 4px solid;
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.activity-timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #dee2e6;
+}
+
+.activity-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.activity-icon {
+    left: -41px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: none !important;
+}
+
+/* --- Badges Custom --- */
+.badge-soft {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+.bg-success-soft { background: #e8f5e9; color: #2e7d32; }
+.bg-danger-soft { background: #ffebee; color: #c62828; }
